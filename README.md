@@ -58,12 +58,15 @@ Note: stackato client has to be installed (see: https://docs.stackato.com/user/c
 Note: use --health-timeout 500s in case of timeout during the deployment
 
 ## If no manifest.yml exist, you can use the hello-java example file:
- 
+
+```yaml 
   ---
   applications: 
   - name: <app-name>
     memory: 512M
     path: target/<app-target-name> 
+
+```
 
 Note: <app-target-name> is defined in the pom.xml file.
 
