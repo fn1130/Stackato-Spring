@@ -1,8 +1,8 @@
-# Stackato-Spring
+# java/spring app
 Instruction to run java spring app on Stackato
 
 
-1. Installing Oracle JDK on linux system
+## Installing Oracle JDK on linux system
 
 Downloading the jdk
 
@@ -20,7 +20,7 @@ Add path of jdk binaries and JAVA_HOME in  ~/.bashrc :
    export JAVA_HOME=/usr/local/jdk
    
 
-2. Installing Maven
+## Installing Maven
   
 Downloading maven
    wget http://mirror.klaus-uwe.me/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
@@ -39,14 +39,14 @@ source ~/.bashrc for jdk & maven environment
    source ~/.bashrc
    
 
-3. Copy/clone source code (java app with maven pom.xml)
+## Copy/clone source code (java app with maven pom.xml)
    git clone https://github.com/Stackato-Apps/hello-java.git
 
-4. Build application
+## Build application
    cd hello-java
    maven clean package
 
-5. Push to stackato cluster
+## Push to stackato cluster
 
 Note: stackato client has to be installed (see: https://docs.stackato.com/user/client/)
   
@@ -57,7 +57,7 @@ Note: stackato client has to be installed (see: https://docs.stackato.com/user/c
 
 Note: use --health-timeout 500s in case of timeout during the deployment
 
-6. If no manifest.yml exist, you can use the hello-java example file:
+## If no manifest.yml exist, you can use the hello-java example file:
  
   ---
   applications: 
