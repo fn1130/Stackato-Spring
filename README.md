@@ -9,6 +9,7 @@ Downloading the jdk
   wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2Fwww.oracle.com%2F; oraclelicense=accept-securebackup-cookie" "http://download.oracle.com/otn-pub/java/jdk/8u91-b14/jdk-8u91-linux-x64.tar.gz"
 
 Installing the jdk
+
    tar xzvf jdk-8u91-linux-x64.tar.gz
    sudo mv jdk-8u91-linux-x64 /usr/local/
    sudo ln -s /usr/local/jdk-8u91-linux-x64 /usr/local/jdk
@@ -23,28 +24,36 @@ Add path of jdk binaries and JAVA_HOME in  ~/.bashrc :
 ## Installing Maven
   
 Downloading maven
+
    wget http://mirror.klaus-uwe.me/apache/maven/maven-3/3.3.9/binaries/apache-maven-3.3.9-bin.tar.gz
 
 Installing maven
+
    tar xzvf apache-maven-3.3.9-bin.tar.gz
    sudo mv apache-maven-3.3.9-bin /usr/local/
    sudo ln -s /usr/local/apache-maven-3.3.9-bin /usr/local/maven
 
 Add maven bin direcotry to path
+
    vi ~/.bashrc
    export PATH=$PATH:/usr/local/maven/bin
 
 
 source ~/.bashrc for jdk & maven environment
+
    source ~/.bashrc
    
 
 ## Copy/clone source code (java app with maven pom.xml)
+
    git clone https://github.com/Stackato-Apps/hello-java.git
 
 ## Build application
+
    cd hello-java
-   maven clean package
+   mvn clean package
+   
+   Note: If the target application exists aleady, you can use this binary to push it to stackato.
 
 ## Push to stackato cluster
 
