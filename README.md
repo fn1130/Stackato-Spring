@@ -35,8 +35,8 @@ wget http://mirror.klaus-uwe.me/apache/maven/maven-3/3.3.9/binaries/apache-maven
 Installing maven
 ```bash
 tar xzvf apache-maven-3.3.9-bin.tar.gz
-sudo mv apache-maven-3.3.9-bin /usr/local/
-sudo ln -s /usr/local/apache-maven-3.3.9-bin /usr/local/maven
+sudo mv apache-maven-3.3.9 /usr/local/
+sudo ln -s /usr/local/apache-maven-3.3.9 /usr/local/maven
 ```
 
 Add maven bin direcotry to path
