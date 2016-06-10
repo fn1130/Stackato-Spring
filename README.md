@@ -83,7 +83,7 @@ applications:
   path: target/<app-target-name> 
 ```
 
-Note: the app "app-target-name" is defined in the pom.xml file.
+Note: "app-target-name" is defined in the pom.xml file.
 
 
 
