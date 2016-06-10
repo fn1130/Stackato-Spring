@@ -12,8 +12,8 @@ wget --no-cookies --no-check-certificate --header "Cookie: gpw_e24=http%3A%2F%2F
 Installing the jdk
 ```bash
 tar xzvf jdk-8u91-linux-x64.tar.gz
-sudo mv jdk-8u91-linux-x64 /usr/local/
-sudo ln -s /usr/local/jdk-8u91-linux-x64 /usr/local/jdk
+sudo mv jdk1.8.0_91 /usr/local/
+sudo ln -s /usr/local/jdk1.8.0_91 /usr/local/jdk
 ```
 
 Add path of jdk binaries and JAVA_HOME in  ~/.bashrc
