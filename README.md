@@ -14,12 +14,13 @@ Instruction to run java spring app on Stackato
    sudo mv jdk-8u91-linux-x64 /usr/local/
    sudo ln -s /usr/local/jdk-8u91-linux-x64 /usr/local/jdk
 
-### Add path of jdk binaries and JAVA_HOME in  ~/.bashrc : 
+### Add path of jdk binaries and JAVA_HOME in  ~/.bashrc
 
+```bash
    vi ~/.bashrc
    export PATH=/usr/local/jdk/bin:$PATH
    export JAVA_HOME=/usr/local/jdk
-   
+```
 
 ## Installing Maven
   
